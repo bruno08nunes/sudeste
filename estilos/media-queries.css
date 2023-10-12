@@ -1,0 +1,122 @@
+@charset "UTF-8";
+
+@media screen and (max-width: 1000px) {
+    main {
+        justify-content: space-between;
+    }
+    main > .section_home:is(:nth-child(1), :nth-child(2)) {
+        flex: 1 0;
+        max-width: 48%;
+    }
+    main > .section_home:is(:nth-child(3), :nth-child(4)) {
+        flex-grow: 1;
+        max-width: 100%;
+    }
+    main > .section_home:nth-child(3) .mapa {
+        max-width: 80%;
+        margin: auto;
+        padding-bottom: 60%;
+    }
+    .main_estados div.div_estados:has(iframe) {
+        flex-direction: column-reverse;
+        gap: 0;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    main {
+        flex-direction: column;
+    }
+    main > .section_home:is(:nth-child(1), :nth-child(2)) {
+        max-width: 100%;
+    }
+    nav {
+        max-width: 100%;
+    }
+    nav ul {
+        justify-content: center;
+    }
+    .art_mascote figure {
+        float: none;
+        margin: auto;
+        font-size: 1.5em;
+        margin-bottom: 10px;
+    }
+    .main_estados div.div_estados:has(img) {
+        flex-direction: column-reverse;
+        gap: 0;
+        align-items: center;
+        & img {
+            width: 70%;
+            margin-top: 15px;
+        }
+    }
+    footer {
+        flex-wrap: wrap;
+    }
+    footer > :is(address, div) {
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 620px) {
+    body {
+        background: var(--roxo);
+    }
+    header {
+        background-image: linear-gradient(to bottom, var(--turquesa), #2be0cb);
+    }
+    #menu {
+        display: block;
+    }
+    nav {
+        margin-top: 5px;
+        display: none;
+        font-size: 1.7em;
+    }
+    nav ul {
+        flex-direction: column;
+        & a {
+            display: block;
+            border-radius: 5px;
+        }
+    }
+    main {
+        background-color: rgba(255, 255, 255);
+        margin-top: 0;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+    }
+    .art_mascote figure {
+        float: left;
+        font-size: 1.2em;
+        margin: 0px 10px 2px 0;
+    }
+    main > .section_home:nth-child(3) .mapa {
+        max-width: 90%;
+        margin: auto;
+        padding-bottom: 80%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    main {
+        padding: 0;
+        padding-top: 20px;
+    }
+    .main_estados .div_estados {
+        font-size: 1.1em;
+    }
+    .main_estados div.div_estados:has(img) img {
+        width: 95%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    main > .section_home:not(:first-child) {
+        font-size: 0.95em;
+    }
+    .main_estados .div_estados {
+        font-size: 1em;
+    }
+}
