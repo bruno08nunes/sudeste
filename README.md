@@ -1,4 +1,4 @@
-![image](https://github.com/bruno08nunes/sudeste/assets/139359503/2adc39a2-856f-49a5-b472-fdd36ced37f0)## Comunidade Sudeste
+## Comunidade Sudeste
 
 ### Objetivo:
 <p>O projeto consiste em uma comunidade, similar àquelas do Orkut, sobre o Sudeste do Brasil. Nele há informações como os estados, músicas, comidas, mapa da região e descrição dos estados. A atividade serviu para botar em prática os conhecimentos de HTML e CSS. O público alvo do site é diverso, sendo desde alunos até os professores.</p>
